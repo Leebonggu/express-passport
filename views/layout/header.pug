@@ -1,0 +1,12 @@
+header.header
+  .header__container
+    a(href="/")
+      h3 홈   
+    if loginUser
+      a(href="/sign-out")
+        h3 로그아웃  
+    else
+      a(href="/sign-in")
+        h3 로그인  
+      a(href="/sign-up")
+        h3 회원가입  

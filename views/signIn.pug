@@ -1,0 +1,10 @@
+extends layout/index
+
+block content
+  div.signin__container
+    form(action='/sign-in', method="post")
+      label 아이디
+      input(type="text", name="username", placeholder="username", required=true)
+      label 비밀번호
+      input(type="password", name="password", placeholder="password", required=true)
+      input(type="submit", value="로그인")

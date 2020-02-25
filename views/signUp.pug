@@ -1,0 +1,12 @@
+extends layout/index
+
+block content
+  div.signup__container
+    form(action='/sign-up', method="post")
+      label 아이디
+      input(type="text", name="username", placeholder="username", required=true)
+      label 비밀번호
+      input(type="password", name="password", placeholder="password", required=true)
+      label 비밀번호 확인
+      input(type="password", name="passwordConfirm", placeholder="password confirm", required=true)
+      input(type="submit", value="회원가입")

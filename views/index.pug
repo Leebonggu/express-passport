@@ -1,0 +1,9 @@
+extends layout/index
+
+block content
+  div.home__container
+    if loginUser
+      span #{loginUser.username}님 반갑습니다 홈입니다!
+    else
+      span 홈
+      
